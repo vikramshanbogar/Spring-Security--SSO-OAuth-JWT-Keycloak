@@ -1,0 +1,14 @@
+server:
+  port: 8081
+
+saml2:
+  ap:
+    metadata:
+      location: http://localhost:8080/realms/SpringDemo/protocol/saml/descriptor
+    signing-cert: MIICozCCAYsCBgGM9rAMdDANBgkqhkiG9w0BAQsFADAVMRMwEQYDVQQDDApTcHJpbmdEZW1vMB4XDTI0MDExMTA0MDEyMVoXDTM0MDExMTA0MDMwMVowFTETMBEGA1UEAwwKU3ByaW5nRGVtbzCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALOGOAb7VZTlOJkbeurq3xjXQqTaOBt4Mkh+d3WoaNTNrB2ai7Yej8W2Z+xso41YHSaGHtcQArReFDSizskR4EfIxZc9BphDEcBRk5IE38lxqCJtWDlAlNmap9i7kS1fpE5D/LbxuP1BrQsSU+Ghlj06yYdH7lOC+zgYg3w5UECd2q2aN+Q/81a2jsrq/kBO5sVgzWhhkHT9W1zEmcciCtb4rIigAVJXyv+taJDZosZ1575np0Cw6SGTff8te6FmCe/+l3+5GWtsNQ9UMyfESx/IAzS8ZOr1JmCTBNZIkigWiI7dT3rnpvLPv8m+jJquG2nJgBBPD28IshDvLm7M0/8CAwEAATANBgkqhkiG9w0BAQsFAAOCAQEADW/vFgLTQqlJkd3h9o/gkAAba1Pqc/64fMZypkAMbmWhsPFSPN+lWKj+g5OBiS9QdzaI1kKdizkpOaVog0P+xlTkZCS/b0tAcEA3du1FxAMyVEMzDUH6d2+e+MMl08xmGFzD6uNmHfHbuRmKMi8vg021849WIqopxg3dz1NzEOSLFR/zpZVx9sEMogN24hWt+3nGUPrveYkJvwf759mvSwbNL71FQqmMCFFmDv9Tnl8CjfkMSEAlBrmmkzpxDhIEgBDroT3O9i3WYWfkA/sAy3fUe0hPM1aPTiIO5JR4u8wsT10hM3elEncEbquFAC4Z79WErycRWdTKWbyc2a/iPw==
+  rp:
+    signing:
+      # this pair was generated with:
+      # openssl req -newkey rsa:2048 -nodes -keyout rp-key.key -x509 -days 365 -out rp-certificate.crt
+      cert-location: /config/rp-certificate.crt
+      key-location: /config/rp-key.key

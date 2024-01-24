@@ -1,10 +1,10 @@
-![image](https://github.com/vikramshanbogar/Spring-Security--SSO-OAuth-JWT-Keycloak/assets/70604290/f78bd271-5d48-4cea-ab34-ddffc27cbecd)# Spring Security: SSO-OAuth-JWT-Keycloak
+# Spring Security: SSO-OAuth-JWT-Keycloak
  
 It consists of 3 modules:
 
-1. Basic Spring security with DaoAuthProvider
-2. OAuth implementation flow
-3. SAML flow
+1. Basic Spring security with DaoAuthProvider (https://github.com/vikramshanbogar/Spring-Security--SSO-OAuth-JWT-Keycloak/tree/main/SpringSecurity-SpringBoot)
+2. OAuth implementation flow (https://github.com/vikramshanbogar/Spring-Security--SSO-OAuth-JWT-Keycloak/tree/main/KeyCloak-JWT-SpringBoot)
+3. SAML flow (https://github.com/vikramshanbogar/Spring-Security--SSO-OAuth-JWT-Keycloak/tree/main/saml-app)
 
    Notes on Oauth:-
 
